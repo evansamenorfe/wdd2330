@@ -1,0 +1,30 @@
+@media only screen and (min-width: 32.5em) {
+    header img {
+        box-shadow: 5px 5px white;
+        margin-top: 10px;
+        border-style: double;
+    }
+
+    header {
+        background-color: #350bf3;
+        text-align: center;
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+    }
+
+      h1{
+        padding: 60px 40px 40px 50px;
+    }
+
+
+
+    footer {
+        background-color: #350bf3;
+        border-style: dotted;
+    }
+
+    body {
+        margin:auto;
+        width: auto;
+    }
+}
