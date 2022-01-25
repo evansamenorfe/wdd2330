@@ -1,148 +1,145 @@
-header, footer {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    text-align: center;
-    background-color: #85E2FF;
-    padding: 10px;
-    color: black;
+header,
+footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  background-color: #85e2ff;
+  padding: 10px;
+  color: black;
 }
 /*font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif*/
 
 body {
-    font-size: 25px;
+  font-size: 25px;
 }
-
-
 
 header,
 main,
 section,
 footer {
-	max-width: 767px;
-	margin: 0 auto;
+  max-width: 767px;
+  margin: 0 auto;
 }
+main,
+section {
+    background-color: #EAEBED;
+    padding: auto;
+}
+
 h2 {
-	font-size: 29px;
+  font-size: 29px;
 }
 h3 {
-	color: #000000;
+  color: #000000;
 }
 
 nav {
-	margin: 0 auto;
-	max-width: 780px;
-    
+  margin: 0 auto;
+  max-width: 780px;
 }
 nav ul {
-	list-style-type: none;
-	overflow: hidden;
+  list-style-type: none;
+  overflow: hidden;
 }
 nav ul li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 0.75rem;
-	text-decoration: none;
-	font-size: 25px;
-	transition: 0.5s;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.5s;
 }
 
 footer {
-	height: 8rem;
+  height: 8rem;
 }
 
 main picture {
-	display: none;
-	margin: 1rem;
-}
-.personas1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 0.98rem
+  display: none;
+  margin: 1rem;
 }
 
 /* Tablet Views ******************************/
 @media only screen and (min-width: 37.5em) {
-	h1 {
-		font-size: 1.5rem;
-	}
+  h1 {
+    font-size: 1.5rem;
+  }
 
-	/* Horizontal Menu Examples */
-	/* Flex *********************/
-	 		nav ul { display: flex; }
-		  nav ul li { flex: 1 1 auto; } 
+  /* Horizontal Menu Examples */
+  /* Flex *********************/
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 auto;
+  }
 
-	/* flex display *********************/
- 	nav ul {
-		display: flex;
-		
-	} 
+  /* flex display *********************/
+  nav ul {
+    display: flex;
+  }
 
-	nav a {
-		font-size: 1rem;
-	}
+  nav a {
+    font-size: 1rem;
+  }
 
-	nav a:hover {
-		/* 	background-color: #bbb;
-	color: #36454f; */
-		--d: 75%;
-	}
-
-	main {
-		grid-template-columns: 1fr 1fr;
-	}
-	article:nth-child(3) {
-		grid-column: span 2;
-	}
-	main picture {
-		display: block;
-	}
-	main picture img {
-		width: 100%;
-		height: auto;
-		border: 1px solid #bbb;
-	}
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+  article:nth-child(3) {
+    grid-column: span 2;
+  }
+  main picture {
+    display: block;
+  }
+  main picture img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #bbb;
+  }
 }
-
-
 
 /* Desktop Views ****************************/
 @media only screen and (min-width: 60em) {
-	h1 {
-		font-size: 2rem;
-	}
-	nav a {
-		font-size: 1.1rem;
-	}
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-	}
-	article:nth-child(3) {
-		grid-column: span 1;
-	}
-   
-    .becky {
-        display: grid;
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .details1 {
-        display: grid;
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-    .bene {
-        display: grid;
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-    .details2 {
-        display: grid;
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
+  h1 {
+    font-size: 2rem;
+  }
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  article:nth-child(3) {
+    grid-column: span 1;
+  }
+
+  .personas1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.98rem;
+  }
+
+  .becky {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .details1 {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .bene {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .details2 {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 }
