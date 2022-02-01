@@ -3,7 +3,9 @@ body {
 	margin: 0;
 }
 
-header {
+header,
+footer,
+main {
 	background-color: #fff;
 	padding: 5px 0;
 	display: flex;
@@ -14,6 +16,58 @@ header {
 	border-bottom: 1px solid #bbb;
 }
 
+nav ul li  {
+    display: block;
+    padding: .8rem ;
+    text-decoration: none;
+	text-decoration-style: none;
+	list-style-type: none;
+	background-color: #eee;
+
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #333;
+	border-top: 1px solid rgba(0,0,0,0.5);
+
+}
+
+nav ul li.active a{
+	background-color: rgba(0,0,0,0.2);
+	color: #fff;
+}
+nav ul li a.hover{
+	background-color: rgba(0,0,0,0.3);
+
+}
+
+nav button {
+	 margin: 10px 10px;
+	 background: transparent;
+	 border: none;
+	 font-size: 2rem;
+	 color: #555;
+
+
+
+}
+
+.upper ul li {
+	text-decoration-style: none;
+	
+}
+
+/*
+header{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}*/
+
+.date {
+	
+	grid-row: 2/3;
+}
 .logo {
 	display: flex;
 	align-items: center;
@@ -45,24 +99,67 @@ header {
 
 
 
-.social {
+.social img {
 	margin-right: 1.5rem;
     height: 32px;
     width: 32px;
 }
 
-.social svg {
-	width: 25px;
-	height: auto;
-}
-
-
-.date,
-aside {
+.date{
 	margin: 0.5rem;
 	border: 1px solid #bbb;
 	padding: 0.75rem;
 	background-color: #eee;
 }
 
+#lastModified {
+	text-align: center;
+	font-size: auto;
+}
 
+footer img {
+	width: 100px;
+	height: 100px;
+}
+.upper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+p {
+	border: solid #0000;
+}
+
+
+main div.placeholder {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 15em;
+    border: 2px solid gray;
+    padding: 1rem;
+    background-color: rgb(226, 223, 223);
+    margin-bottom: 15px;;
+}
+main div p {
+    display: inline;
+    border: 1px solid rgb(170, 170, 170);
+    padding: 10px;
+    height: 6.1em;
+}
+main div p.spotTwo, p.spotOne {
+    margin: 0;
+}
+
+main p.spotThree, .join {
+    display: none;
+}
+
+main > p {
+    height: 5em;
+    border: 2px solid gray;
+    padding: 1rem;
+    background-color: rgb(226, 223, 223);
+}
