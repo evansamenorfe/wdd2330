@@ -1,5 +1,22 @@
-/*@media only screen and (min-width: 60em){
-    ul {
+ @media only screen and (min-width: 60em){
+    #hamBtn {
+         display: none;
+     }
+     nav ul#navnav {
+         display: flex;
+         justify-content: flex-end;
+         border-left: 1px solid rgba(0,0,0,0.3);
+     }
+
+     nav ul li a{
+         padding: 1rem;
+         border: none;
+         border-right: 1px solid rgba(0,0,0,0.3);
+     }
+    
+
+
+   /* ul {
         display: flex;
         margin-left:30em;
     }
@@ -90,8 +107,5 @@
         height: auto;
         width: auto;
         margin: 0;
-    }
-
-}
-
-*/
+    }*/
+ }

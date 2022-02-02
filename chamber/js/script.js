@@ -1,20 +1,23 @@
-// select the elements to manipulate (output to)
-const datefield = document.querySelector(".date");
-const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.
 
-// derive the current date using a date object
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
-);
-const fulldateUK = new Intl.DateTimeFormat("en-UK", {
-	dateStyle: "full"
-}).format(now);
-// long, medium, short options ... try them
+const d = new Date();
+let year = d.getFullYear();
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+let day = weekday[d.getDay()];
+let monthname = month[d.getMonth()];
 
-datefield.innerHTML = `<em>${fulldate}</em>`;
-datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+document.querySelector(".currentyear").textContent += `\u00A9 ${year} GS Chamber`;
 
-document.querySelector(
-	"#lastModified"
-).textContent = `Last Modification: ${document.lastModified}`;
+const lastupdate = document.querySelector(".lastupdated");
+lastupdate.textContent += `Last Modification: ${document.lastModified}`;
+
+document.querySelector(".todaysDate").textContent = `${day}, ${d.getDate()} ${monthname} ${year}`;
+
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("open");
+    document.getElementById("hamBtn").classList.toggle("open");
+}
+
+const x = document.getElementById("hamBtn");
+x.onclick = toggleMenu;
+
