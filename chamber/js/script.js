@@ -6,7 +6,7 @@ const month = ["January","February","March","April","May","June","July","August"
 let day = weekday[d.getDay()];
 let monthname = month[d.getMonth()];
 
-document.querySelector(".currentyear").textContent += `\u00A9 ${year} GS Chamber`;
+document.querySelector(".currentyear").textContent += `\u00A9 ${year} Wheb Media`;
 
 const lastupdate = document.querySelector(".lastupdated");
 lastupdate.textContent += `Last Modification: ${document.lastModified}`;

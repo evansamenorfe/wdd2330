@@ -37,6 +37,8 @@ nav ul li  {
 
 nav ul li a {
 	display: block;
+	display: flex;
+	justify-content: flex-end;
 	padding: 0.8rem 2vw;
 	text-decoration: none;
 	color: #333;
